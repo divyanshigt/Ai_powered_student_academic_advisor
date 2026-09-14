@@ -85,7 +85,8 @@ flowchart TD
     O[⚙️ Administrator] -->|Manage Academic Data| B
 
 
-    Academic Guidance Flow
+##Academic Guidance Flow
+
 Stage	System Action	Example
 Data Collection	Collect academic information	Marks, grades, attendance
 Preprocessing	Clean and prepare academic data	Missing-value handling, normalization
@@ -99,8 +100,12 @@ Persona	Role	Key Needs & Goals
 Student	Primary User	View performance, identify weak subjects, receive recommendations, follow study plans
 Faculty / Advisor	Academic Mentor	Review student performance, monitor progress, provide academic guidance
 Administrator	System Manager	Manage users, academic data, courses, subjects, and system information
-📋 Functional & Non-Functional Requirements
+
+
+###📋 Functional & Non-Functional Requirements
+
 Functional Requirements (FR)
+
 FR1 — User Registration & Authentication: Allow students, faculty/advisors, and administrators to securely log in to the system.
 FR2 — Profile Management: Allow students to create and update their academic profiles.
 FR3 — Academic Data Management: Store and manage marks, grades, attendance, subjects, and academic records.
@@ -123,7 +128,9 @@ NFR6 — Accuracy: AI/ML recommendations should provide relevant and meaningful 
 NFR7 — Maintainability: The system should allow future modification of AI models, academic rules, and recommendation logic.
 NFR8 — Privacy: Student academic data should only be accessible to authorized users.
 NFR9 — Compatibility: The system should work effectively across commonly used web browsers and devices.
-🤖 AI/ML Module
+
+
+##🤖 AI/ML Module
 
 The AI/ML module is the core intelligent component of the AI-Powered Academic Advisor.
 
@@ -162,7 +169,8 @@ Regression
 Clustering
 Recommendation systems
 Performance prediction
-🔗 Requirement Traceability Matrix (RTM)
+
+##🔗 Requirement Traceability Matrix (RTM)
 ID	Requirement Description	Target Stakeholders	Priority	Source
 FR1	User Registration & Authentication	Student, Faculty, Administrator	High	System Requirement
 FR2	Student Profile Management	Student	High	User Requirement
@@ -176,7 +184,9 @@ FR9	Progress Tracking	Student, Faculty	High	User Requirement
 FR10	Dashboard & Reports	Student, Faculty, Administrator	Medium	System Requirement
 FR11	Faculty / Advisor Support	Faculty	High	Stakeholder Requirement
 FR12	Academic Data Administration	Administrator	Medium	Admin Requirement
-📁 Repository Structure
+
+
+##📁 Repository Structure
 ai-powered-academic-advisor/
 │
 ├── README.md
@@ -212,6 +222,8 @@ ai-powered-academic-advisor/
 └── tests/
     ├── unit/
     └── integration/
+
+
 🚀 Future Scope & Roadmap
  Train and deploy a dedicated ML model for academic performance prediction.
  Implement advanced personalized recommendation algorithms.
@@ -231,7 +243,7 @@ Submission Date: September 2026
 
 ### 👨‍💻 Team Members
 
-- **Arya Singh Vats** — AI/ML Developer
+- **Divyanshi Gupta** — AI/ML Developer
 - **Shreya Singh** — System Analyst
 - **Tanmay Shekhar** — Backend & Database Developer
 - **Harshit Singh Bharti** — Frontend & UI/UX Developer
