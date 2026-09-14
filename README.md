@@ -55,49 +55,54 @@ The objective is to provide students with data-driven academic guidance rather t
 
 ```mermaid
 flowchart TD
-
     A[Student] -->|Academic Data| B[Academic Data Management]
-
     B --> C[Data Preprocessing]
-
-    C --> D[AI/ML Analysis Engine]
-
+    C --> D[AI ML Analysis Engine]
     D --> E{Academic Performance Analysis}
 
     E -->|Strong Areas| F[Strength Identification]
-
     E -->|Weak Areas| G[Weak Subject Detection]
 
-    G --> H[Skill / Topic Gap Analysis]
-
+    G --> H[Skill Topic Gap Analysis]
     H --> I[Personalized Recommendation Engine]
 
     I --> J[Learning Resource Recommendation]
-
     I --> K[Personalized Study Plan]
 
     J --> L[Student Dashboard]
-
     K --> L
 
     L --> M[Progress Tracking]
-
     M --> D
 
-    N[Faculty / Advisor] -->|Review Performance| L
-
+    N[Faculty Advisor] -->|Review Performance| L
     O[Administrator] -->|Manage Academic Data| B
+```
 
-##Academic Guidance Flow
+## 📚 Academic Guidance Flow
 
-Stage	System Action	Example
-Data Collection	Collect academic information	Marks, grades, attendance
-Preprocessing	Clean and prepare academic data	Missing-value handling, normalization
-AI Analysis	Analyze student performance	Subject-wise performance
-Weak Area Detection	Identify areas requiring improvement	Low performance in DBMS
-Recommendation	Generate personalized suggestions	Practice SQL & normalization
-Study Planning	Generate customized study plan	2 hours/day DBMS practice
-Progress Tracking	Monitor improvement	Compare previous and current scores
+```mermaid
+flowchart LR
+    A[Student] --> B[Academic Profile]
+    B --> C[Academic Performance Analysis]
+    C --> D{Identify Areas}
+
+    D -->|Strong| E[Strength Identification]
+    D -->|Weak| F[Weak Subject Detection]
+
+    F --> G[Topic Gap Analysis]
+    G --> H[AI Recommendations]
+
+    H --> I[Learning Resources]
+    H --> J[Personalized Study Plan]
+
+    I --> K[Student Dashboard]
+    J --> K
+
+    K --> L[Progress Tracking]
+    L --> C
+```
+
 👥 Target User Personas
 Persona	Role	Key Needs & Goals
 Student	Primary User	View performance, identify weak subjects, receive recommendations, follow study plans
