@@ -103,46 +103,56 @@ flowchart LR
     L --> C
 ```
 
-👥 Target User Personas
-Persona	Role	Key Needs & Goals
-Student	Primary User	View performance, identify weak subjects, receive recommendations, follow study plans
-Faculty / Advisor	Academic Mentor	Review student performance, monitor progress, provide academic guidance
-Administrator	System Manager	Manage users, academic data, courses, subjects, and system information
+## 👥 Target User Personas
 
+| Persona | Role | Key Needs & Goals |
+|---|---|---|
+| **Student** | Primary User | View academic performance, identify weak subjects, receive personalized recommendations, and follow study plans |
+| **Faculty / Advisor** | Academic Mentor | Review student performance, monitor progress, and provide academic guidance |
+| **Administrator** | System Manager | Manage users, academic data, courses, subjects, and system information |
 
-###📋 Functional & Non-Functional Requirements
+---
 
-Functional Requirements (FR)
+## 📋 Functional & Non-Functional Requirements
 
-FR1 — User Registration & Authentication: Allow students, faculty/advisors, and administrators to securely log in to the system.
-FR2 — Profile Management: Allow students to create and update their academic profiles.
-FR3 — Academic Data Management: Store and manage marks, grades, attendance, subjects, and academic records.
-FR4 — Academic Performance Analysis: Analyze student academic performance using available academic data.
-FR5 — Weak Subject Detection: Identify subjects or academic areas where the student is performing below the expected level.
-FR6 — AI-Based Recommendation: Generate personalized academic recommendations based on student performance.
-FR7 — Study Plan Generation: Generate customized study plans according to identified weak areas and student requirements.
-FR8 — Learning Resource Recommendation: Recommend relevant learning resources for improvement.
-FR9 — Progress Tracking: Track academic progress and compare performance over time.
-FR10 — Dashboard & Reports: Display academic performance, recommendations, study plans, and progress through dashboards and reports.
-FR11 — Faculty / Advisor Support: Allow faculty/advisors to review student performance and progress.
-FR12 — Academic Data Administration: Allow administrators to manage users, courses, subjects, academic data, and system information.
-Non-Functional Requirements (NFR)
-NFR1 — Security: Student academic information must be protected using secure authentication and access control.
-NFR2 — Performance: The system should provide academic analysis and recommendations within an acceptable response time.
-NFR3 — Reliability: The system should provide consistent results and remain available during normal usage.
-NFR4 — Scalability: The system should support an increasing number of students and academic records.
-NFR5 — Usability: The interface should be simple, intuitive, and easy for students and faculty to use.
-NFR6 — Accuracy: AI/ML recommendations should provide relevant and meaningful academic guidance.
-NFR7 — Maintainability: The system should allow future modification of AI models, academic rules, and recommendation logic.
-NFR8 — Privacy: Student academic data should only be accessible to authorized users.
-NFR9 — Compatibility: The system should work effectively across commonly used web browsers and devices.
+### Functional Requirements (FR)
 
+- **FR1 — User Registration & Authentication:** Allow students, faculty/advisors, and administrators to securely log in to the system.
+- **FR2 — Profile Management:** Allow students to create and update their academic profiles.
+- **FR3 — Academic Data Management:** Store and manage marks, grades, attendance, subjects, and academic records.
+- **FR4 — Academic Performance Analysis:** Analyze student academic performance using available academic data.
+- **FR5 — Weak Subject Detection:** Identify subjects or academic areas where the student is performing below the expected level.
+- **FR6 — AI-Based Recommendation:** Generate personalized academic recommendations based on student performance.
+- **FR7 — Study Plan Generation:** Generate customized study plans according to identified weak areas and student requirements.
+- **FR8 — Learning Resource Recommendation:** Recommend relevant learning resources for improvement.
+- **FR9 — Progress Tracking:** Track academic progress and compare performance over time.
+- **FR10 — Dashboard & Reports:** Display academic performance, recommendations, study plans, and progress through dashboards and reports.
+- **FR11 — Faculty / Advisor Support:** Allow faculty/advisors to review student performance and progress.
+- **FR12 — Academic Data Administration:** Allow administrators to manage users, courses, subjects, academic data, and system information.
 
-##🤖 AI/ML Module
+---
 
-The AI/ML module is the core intelligent component of the AI-Powered Academic Advisor.
+### Non-Functional Requirements (NFR)
 
-AI/ML Workflow
+- **NFR1 — Security:** Student academic information must be protected using secure authentication and access control.
+- **NFR2 — Performance:** The system should provide academic analysis and recommendations within an acceptable response time.
+- **NFR3 — Reliability:** The system should provide consistent results and remain available during normal usage.
+- **NFR4 — Scalability:** The system should support an increasing number of students and academic records.
+- **NFR5 — Usability:** The interface should be simple, intuitive, and easy for students and faculty to use.
+- **NFR6 — Accuracy:** AI/ML recommendations should provide relevant and meaningful academic guidance.
+- **NFR7 — Maintainability:** The system should allow future modification of AI models, academic rules, and recommendation logic.
+- **NFR8 — Privacy:** Student academic data should only be accessible to authorized users.
+- **NFR9 — Compatibility:** The system should work effectively across commonly used web browsers and devices.
+
+---
+
+## 🤖 AI/ML Module
+
+The AI/ML module is the core intelligent component of the **AI-Powered Academic Advisor**. It analyzes academic data and generates personalized guidance for students.
+
+### AI/ML Workflow
+
+```text
 Student Academic Data
         ↓
 Data Preprocessing
@@ -158,43 +168,54 @@ Weak Subject Detection
 Recommendation Generation
         ↓
 Personalized Study Plan
-AI/ML Responsibilities
-Academic data preprocessing
-Feature selection and engineering
-Student performance analysis
-Weak subject identification
-Recommendation logic/model development
-Model training and testing
-Model evaluation
-Personalized recommendation generation
-AI module integration with the application
-Possible ML Techniques
+```
+
+### AI/ML Responsibilities
+
+- Academic data preprocessing
+- Feature selection and engineering
+- Student performance analysis
+- Weak subject identification
+- Recommendation logic/model development
+- Model training and testing
+- Model evaluation
+- Personalized recommendation generation
+- AI module integration with the application
+
+### Possible ML Techniques
 
 Depending on the final implementation, the project can use techniques such as:
 
-Classification
-Regression
-Clustering
-Recommendation systems
-Performance prediction
+- Classification
+- Regression
+- Clustering
+- Recommendation systems
+- Performance prediction
 
-##🔗 Requirement Traceability Matrix (RTM)
-ID	Requirement Description	Target Stakeholders	Priority	Source
-FR1	User Registration & Authentication	Student, Faculty, Administrator	High	System Requirement
-FR2	Student Profile Management	Student	High	User Requirement
-FR3	Academic Data Management	Student, Faculty, Administrator	Critical	Core Specification
-FR4	Academic Performance Analysis	Student, Faculty	Critical	Core Specification
-FR5	Weak Subject Detection	Student, Faculty	Critical	AI Requirement
-FR6	Personalized AI Recommendations	Student	Critical	AI Requirement
-FR7	Personalized Study Plan	Student	High	User Requirement
-FR8	Learning Resource Recommendation	Student	High	User Requirement
-FR9	Progress Tracking	Student, Faculty	High	User Requirement
-FR10	Dashboard & Reports	Student, Faculty, Administrator	Medium	System Requirement
-FR11	Faculty / Advisor Support	Faculty	High	Stakeholder Requirement
-FR12	Academic Data Administration	Administrator	Medium	Admin Requirement
+---
 
+## 🔗 Requirement Traceability Matrix (RTM)
 
-##📁 Repository Structure
+| ID | Requirement Description | Target Stakeholders | Priority | Source |
+|---|---|---|---|---|
+| **FR1** | User Registration & Authentication | Student, Faculty, Administrator | High | System Requirement |
+| **FR2** | Student Profile Management | Student | High | User Requirement |
+| **FR3** | Academic Data Management | Student, Faculty, Administrator | Critical | Core Specification |
+| **FR4** | Academic Performance Analysis | Student, Faculty | Critical | Core Specification |
+| **FR5** | Weak Subject Detection | Student, Faculty | Critical | AI Requirement |
+| **FR6** | Personalized AI Recommendations | Student | Critical | AI Requirement |
+| **FR7** | Personalized Study Plan | Student | High | User Requirement |
+| **FR8** | Learning Resource Recommendation | Student | High | User Requirement |
+| **FR9** | Progress Tracking | Student, Faculty | High | User Requirement |
+| **FR10** | Dashboard & Reports | Student, Faculty, Administrator | Medium | System Requirement |
+| **FR11** | Faculty / Advisor Support | Faculty | High | Stakeholder Requirement |
+| **FR12** | Academic Data Administration | Administrator | Medium | Admin Requirement |
+
+---
+
+## 📁 Repository Structure
+
+```text
 ai-powered-academic-advisor/
 │
 ├── README.md
@@ -230,24 +251,23 @@ ai-powered-academic-advisor/
 └── tests/
     ├── unit/
     └── integration/
+```
 
+---
 
-🚀 Future Scope & Roadmap
- Train and deploy a dedicated ML model for academic performance prediction.
- Implement advanced personalized recommendation algorithms.
- Add an AI chatbot for student academic queries.
- Integrate real-time academic dashboards.
- Add semester-wise performance prediction.
- Provide topic-level weakness detection.
- Integrate external learning platforms and educational resources.
- Add faculty analytics and early-warning alerts for at-risk students.
- Implement explainable AI to show why a particular recommendation was generated.
- Deploy the complete system on a cloud platform.
-👥 Project Team & Credits
-Project Title: AI-Powered Academic Advisor
-Project Type: Artificial Intelligence / Machine Learning & Academic Guidance System
-Version: 1.0
-Submission Date: September 2026
+## 🚀 Future Scope & Roadmap
+
+- Train and deploy a dedicated ML model for academic performance prediction.
+- Implement advanced personalized recommendation algorithms.
+- Add an AI chatbot for student academic queries.
+- Integrate real-time academic dashboards.
+- Add semester-wise performance prediction.
+- Provide topic-level weakness detection.
+- Integrate external learning platforms and educational resources.
+- Add faculty analytics and early-warning alerts for at-risk students.
+- Implement Explainable AI (XAI) to show why a particular recommendation was generated.
+- Deploy the complete system on a cloud platform.
+
 
 ### 👨‍💻 Team Members
 
