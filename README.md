@@ -51,39 +51,42 @@ The objective is to provide students with data-driven academic guidance rather t
 
 ---
 
-## 🔄 System Architecture & Workflow
+## 🏗️ System Architecture & Workflow
 
 ```mermaid
 flowchart TD
 
-    A[👨‍🎓 Student] -->|Academic Data| B[Academic Data Management]
+    A[Student] -->|Academic Data| B[Academic Data Management]
 
     B --> C[Data Preprocessing]
 
-    C --> D[🤖 AI/ML Analysis Engine]
+    C --> D[AI/ML Analysis Engine]
 
     D --> E{Academic Performance Analysis}
 
     E -->|Strong Areas| F[Strength Identification]
+
     E -->|Weak Areas| G[Weak Subject Detection]
 
     G --> H[Skill / Topic Gap Analysis]
 
     H --> I[Personalized Recommendation Engine]
 
-    I --> J[📚 Learning Resource Recommendation]
-    I --> K[📅 Personalized Study Plan]
+    I --> J[Learning Resource Recommendation]
+
+    I --> K[Personalized Study Plan]
 
     J --> L[Student Dashboard]
+
     K --> L
 
-    L --> M[📈 Progress Tracking]
+    L --> M[Progress Tracking]
 
     M --> D
 
-    N[👨‍🏫 Faculty / Advisor] -->|Review Performance| L
-    O[⚙️ Administrator] -->|Manage Academic Data| B
+    N[Faculty / Advisor] -->|Review Performance| L
 
+    O[Administrator] -->|Manage Academic Data| B
 
 ##Academic Guidance Flow
 
